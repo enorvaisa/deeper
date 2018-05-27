@@ -1,14 +1,14 @@
 APPLICATION PURPOSE:
 
 Application is able to handle two requests.
-One public endpoint (/getIntersectionPoints) accepts as an input information about a square and a line and returns information where and if these two objects intersect
+One public endpoint (/getIntersectionPoints) accepts as an input information about a square and a line and returns information where and if these two objects intersect.
 Second endpoint(/getCurrentRequests) is protected with username/password and returns information about how many requests are currently beying processed by the application.
 
 ARCHITECTURAL OVERVIEW AND LIBRARIES USED:
 
 For main application core was chosen SpringBoot as it is simple and reliable all in one solution which has Spring, REST controllers and embedded application server.
 For mathematical calculations was used JTS Topology Suite, Java library for creating and manipulating vector geometry as it has convenient methods for this specific task.
-For some multi threaded tests TestNG library was used.
+For multi threaded tests TestNG library was used to test how application works with higher load of requests.
 
 INSTRUCTIONS HOW TO LAUNCH AND TEST APPLICATION:
 
